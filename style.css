@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Inter', Arial;
+}
+
+
+body {
+    overflow-y: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.login {
+    width: 384px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo-riot-games img {
+    width: 150px;
+}
+
+.login fieldset {
+    width: 20vw;
+    border: none;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between ;
+}
+
+.login fieldset legend {
+    font-weight: 700;
+    margin-bottom: .5rem;
+    color: #2C2B2B;
+}
+
+
+.login fieldset form {
+    height: 19vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between ;
+}
+
+#input-text {
+    background: #E8E6E6;
+    width: 20vw;
+    height: 8vh;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+
+    padding-left: 1rem;
+}
+
+#input-password {
+    background: #E8E6E6;
+    width: 20vw;
+    height: 8vh;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+
+    padding-left: 1rem;
+}
+
+.login-social-medias {
+    width: 20vw;
+    height: 15vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.facebook {
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    background: #2051FF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.facebook img {
+    width: 30px;
+}
+
+.gmail {
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    background: #8A0000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.gmail img {
+    width: 30px;
+}
+
+.apple {
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    background: #000000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.apple img {
+    width: 30px;
+}
+
+.radio-login{
+    width: 20vw;
+}
+
+.radio-login input{
+    accent-color: #FF002E;
+    cursor: pointer;
+}
+
+.radio-login label{
+    font-weight: 700;
+}
+
+.prosseguir-login{
+
+    width: 20vw;
+    height: 13vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-arrow-right img {
+    border-radius: 5px;
+    background: #FF002E;
+    width: 35px;
+}
+
+.prosseguir-login a{
+    color: #A6A6A6;
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+.prosseguir-login a:hover{
+    transition: .2s ease-in;
+    color: #727272;
+}
+
+.background {
+    background: url(assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 75vw;
+    height: 100vh;
+}
