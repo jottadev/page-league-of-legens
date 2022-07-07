@@ -46,6 +46,7 @@ main {
 
 .login fieldset legend {
     font-weight: 700;
+
     margin-bottom: .5rem;
     color: #2C2B2B;
 }
@@ -53,6 +54,7 @@ main {
 
 .login fieldset form {
     height: 19vh;
+
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -60,24 +62,24 @@ main {
 }
 
 #input-text {
-    background: #E8E6E6;
     width: 20vw;
     height: 8vh;
+
     border-radius: 3px;
     border: none;
     outline: none;
-
+    background: #E8E6E6;
     padding-left: 1rem;
 }
 
 #input-password {
-    background: #E8E6E6;
     width: 20vw;
     height: 8vh;
+
     border-radius: 3px;
     border: none;
     outline: none;
-
+    background: #E8E6E6;
     padding-left: 1rem;
 }
 
@@ -112,6 +114,7 @@ main {
 .gmail {
     width: 80px;
     height: 35px;
+
     border-radius: 5px;
     background: #8A0000;
 
@@ -129,6 +132,7 @@ main {
 .apple {
     width: 80px;
     height: 35px;
+
     border-radius: 5px;
     background: #000000;
 
@@ -157,7 +161,6 @@ main {
 }
 
 .prosseguir-login{
-
     width: 20vw;
     height: 13vh;
 
@@ -167,14 +170,17 @@ main {
     justify-content: space-between;
 }
 
-.button-arrow-right img {
-    border-radius: 5px;
-    background: #FF002E;
+
+.btnArrowDisable{
     width: 35px;
+    border-radius: 5px;
+
+    background: #ffa9b9;
 }
 
 .prosseguir-login a{
     color: #A6A6A6;
+
     text-decoration: none;
     font-size: .8rem;
 }
@@ -185,10 +191,98 @@ main {
 }
 
 .background {
+    width: 75vw;
+    height: 100vh;
+
     background: url(assets/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
-    width: 75vw;
-    height: 100vh;
+
+}
+
+
+@media(max-width: 1000px){
+    .login {
+        width: 500px;
+    }
+
+    #input-text {
+        width: 270px;
+    }
+
+    #input-password {
+        width: 270px;
+    }
+
+    .login-social-medias {
+        width: 270px;
+    }
+
+    .prosseguir-login{
+        width: 40vw;
+    }
+
+}
+
+@media(max-width: 580px){
+    .radio-login{
+        width: 30vw;
+    }
+}
+
+
+@media(max-width: 500px){
+
+    #input-text {
+        width: 75vw;
+
+    }
+    
+    #input-password {
+        width: 75vw;
+    }
+
+    .radio-login{
+        width: 40vw;
+    }
+
+    .login-social-medias {
+        width: 75vw;
+    }
+
+    .prosseguir-login{
+        width: 75vw;
+    }
+
+    .login {
+        width: 100vw;
+    }
+    
+
+    .background {
+        display: none;
+    }
+}
+
+@media(max-width: 350px){
+
+    .login-social-medias {
+        height: 30vh;
+        
+        flex-direction: column;
+    }
+
+    .gmail {
+        width: 75vw;
+    }
+
+    .facebook {
+        width: 75vw;
+    }
+
+    .apple {
+        width: 75vw;
+    }
+    
 }
