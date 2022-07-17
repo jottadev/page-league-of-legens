@@ -1,16 +1,19 @@
-const username = document.querySelector('#input-text')
-const password = document.querySelector('#input-password')
-const btn = document.querySelector('[alt-=arrowright]')
+let [input1, input2] = document.querySelectorAll('input')
+let btn = document.querySelector("button")
 
 
 
 function handleChange(){
-    if(username.value && password.value >= 8){
-       btn.styles.backgroundColor = "#FF123D"
-    }else {
-        btn.styles.backgroundColor = "#FFA9B9"
-    }
+
+   if(input1.value && input2.value.length >= 8){
+    btn.style.background = '#FF002E'
+    btn.disable = ""
+
+   } else {
+    btn.style.background = '#FFA9B9'
+    btn.disable = "disebled"
+   }
 }
 
-username.addEventListener('input', handleChange)
-password.addEventListener('input', handleChange)
+input1.addEventListener('input', handleChange)
+input2.addEventListener('input', handleChange)
